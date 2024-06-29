@@ -1,0 +1,26 @@
+p{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 1rem 1rem 1rem;
+    border-bottom: #000000 solid 1px; 
+    align-items: center;
+}
+
+mat-icon{
+    margin: 0.2rem;
+    cursor: pointer;
+}
+
+.left-title-header{
+    font-family: 'Poppins', Courier, monospace;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+span{
+    color: #FFD24C;
+}
