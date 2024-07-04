@@ -1,10 +1,46 @@
 <header>
-    <div class="left-title-header">
-        <p>F<span>oo</span>dforia</p>
-    </div>
-    <div class="right-title-header">
-        <mat-icon svgIcon="notifications"></mat-icon>
-        <mat-icon svgIcon="bi_bag"></mat-icon>
-        <mat-icon svgIcon="hamburger"></mat-icon>
-    </div>
+  <div class="left-title-header">
+    <a routerLink="/" class="logo">F<span>oo</span>dforia</a>
+  </div>
+  <nav class="right-title-header">
+    <ul>
+      <li>
+        <!-- notificationPage -->
+        <a routerLink="/notification">
+          <div class="svgContainer">
+            <mat-icon svgIcon="notifications"></mat-icon>
+          </div>
+        </a>
+      </li>
+      <!-- end of notification page -->
+      <!-- CartPage -->
+      <li class="cartPage-MainContainer">
+        <a  routerLink="/cart-page">
+          <div class="CartPageContainer">
+            <div class="svgContainer">
+              <mat-icon svgIcon="bi_bag"></mat-icon>
+            </div>
+            <p class="cartCounter">
+              <span>9+</span>
+            </p>
+          </div>
+        </a>
+      </li>
+      <!-- end of CartPage -->
+      <!-- profile -->
+      <li class="menu-container">
+        <a routerLink="/dashboard">
+          <div class="svgContainer">
+            <mat-icon svgIcon="hamburger"></mat-icon>
+          </div>
+          <div class="menu">
+            <a routerLink="/profile">Profile</a>
+            <a routerLink="/orders">Orders</a>
+            <a>Logout</a>
+          </div>
+        </a>
+      </li>
+      <!-- end of Profile -->
+    </ul>
+  </nav>
 </header>

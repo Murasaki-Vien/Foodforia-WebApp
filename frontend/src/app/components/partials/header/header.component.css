@@ -1,26 +1,132 @@
-p{
+p {
     margin: 0;
 }
 
-header{
+ul {
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header {
     display: flex;
     justify-content: space-between;
-    margin: 1.5rem 1rem 1rem 1rem;
-    border-bottom: #000000 solid 1px; 
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem 0 1rem;
+    border-bottom: #000000 solid 1px;
     align-items: center;
+    background-color: white;
 }
 
-mat-icon{
-    margin: 0.2rem;
+.svgIcon {
     cursor: pointer;
+    border-radius: 5px;
 }
 
-.left-title-header{
+span {
+    color: #FFD24C;
+}
+
+.left-title-header {
     font-family: 'Poppins', Courier, monospace;
     font-size: 26px;
     font-weight: 500;
 }
 
-span{
-    color: #FFD24C;
+.svgContainer,
+.CartPageContainer,
+.right-title-header>ul {
+    display: flex;
+}
+
+.svgContainer {
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cartCounter>span {
+    position: absolute;
+    z-index: 1;
+    top: 0rem;
+    right: 0rem;
+    padding: 0.2rem 0.2rem;
+    border-radius: 100rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: #36AE7C;
+}
+
+
+.menu>a {
+    padding: 0.2rem;
+    border-radius: 3px;
+}
+
+
+.menu-container,
+.cartPage-MainContainer {
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    z-index: 1;
+    background: whitesmoke;
+    display: none;
+    right: 1rem;
+}
+
+
+/* pc screen size */
+@media (min-width: 780px) {
+
+    .svgContainer {
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-left: 0.5rem
+    }
+
+    mat-icon {
+        width: 3vw;
+        height: 3vh;
+    }
+
+    .cartCounter>span {
+        top: 0rem;
+        right: 0rem;
+        padding: 0.3rem 0.3rem;
+        border-radius: 100rem;
+        font-size: 1rem;
+    }
+
+
+
+}
+
+
+/* transition */
+.svgContainer:hover,
+.menu>a:hover {
+    background: #36AE7C;
+    color: white;
+    transition-duration: 200ms;
+}
+
+.menu-container:hover .menu {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
 }
